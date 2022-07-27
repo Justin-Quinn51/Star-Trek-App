@@ -8,11 +8,10 @@ async function apiRequest() {
         console.log(data)
 
         document.getElementById('alienName').innerText = data.speciesName
-        document.getElementById('alienWorld').innerText = data.homeWorld
+        document.getElementById('alienWorld').innerText = data.homeworld
         document.getElementById('alienFeatures').innerText = data.features
         document.getElementById('alienFacts').innerText = data.interestingFact
         document.getElementById('alienExamples').innerText = data.noteableExamples
-
         document.getElementById('alienImage').src = data.image
         document.getElementById('alienCaption').innerText = data.speciesName
     } catch(error) {
